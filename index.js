@@ -3,7 +3,7 @@ const app = express();
 const axios = require("axios");
 const getPokemonStats = require("./functions/getPokemonStats");
 const { response } = require("express");
-const PORT = process.env.port || 4000;
+const PORT = process.env.PORT || 4000;
 
 app.get("/", async (req, res, next) => {
   const pokemen = await axios.get(
